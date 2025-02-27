@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +11,55 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="header">
+  <header class="header">
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="#home">
+                        <span class="menu__text">Home</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos">
+                        <span class="menu__text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre">
+                        <span class="menu__text">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato">
+                        <span class="menu__text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="header__brand">
-            <img  class="brand__logo"  src="assets/images/logo_JV-dark.png"  alt="Logo do JV">
+            <img  class="brand__logo"  src="assets/images/logo_JV.png"  alt="Logo do JV">
         </div>
-       
-        <i id="toggleTheme" class="bi bi-brightness-high"></i>
-    </header>
-    <nav>
-        <ul class="menu menu--social">
+       <div class="header__toggle">
+           <i id="toggleTheme" class="bi bi-brightness-high"></i>
+       </div>  
+  </header>
+    <nav class="nav--mobile">
+        <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home">
-                    <i class=" menu__icon bi bi-house-door"></i>
+                    <i class="menu__icon bi bi-house-door"></i> 
                     <span class="menu__text">Home</span>
                 </a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#projetos">
-                    <i class="menu__icon bi bi-window-stack"></i>
+                    <i class="menu__icon bi bi-window-stack"></i> 
                     <span class="menu__text">Projetos</span>
                 </a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#sobre">
-                    <i class=" menu__icon bi bi-person"></i>
+                    <i class="menu__icon bi bi-person"></i>
                     <span class="menu__text">Sobre</span>
                 </a>
             </li>
@@ -46,6 +71,12 @@
             </li>
         </ul>
     </nav>
-    <h1>Jonas Vitório</h1>
+    <main></main>
+    <footer>
+        <p>
+           © 2025. Todos os Direitos Reservados. Jonas Vitório. Desenvolvido por <a href="https://github.com/JonasV29">JV</a>
+        </p>
+    </footer>
+    <script src="assets/JS/scripts.js"></script>
 </body>
 </html>
