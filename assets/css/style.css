@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* Themes Dark and Light */
 :root  , :root[data-theme="dark"]{
     --primary-color: #F0F0F0;
 
@@ -38,6 +42,7 @@
 body {
     background-color: var(--primary-bg-color);
     font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
 }
 
 html[data-theme='dark'] .brand__logo {
@@ -54,15 +59,27 @@ a:hover {
     font-weight: 600;
 }
 
- footer p {
-    position:absolute;
-    bottom: 0;
+.menu--principal {
+    gap:1rem;
+}
+
+main {
+    padding: 2.5rem 1rem;
+}
+
+h1,h2,h3 {
+    font-family: 'League Spartan',Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+ footer p  {
+    display: flex;
+    position:fixed;
     font-size: .875rem;
     text-align: center;
     justify-content: center;
     padding: 1rem;
-    color: var(--primary-color);
 }
+
 
 i {
    color: var(--icon-color);
@@ -143,6 +160,10 @@ i {
 
 .menu--principal {
     gap: 1rem;
+}
+
+.menu--social {
+    gap:1rem;
 }
 
 .header__nav {
