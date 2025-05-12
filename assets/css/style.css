@@ -87,12 +87,14 @@ main {
     flex-direction: column;
     padding: 6.25rem 1rem 2rem 1rem;
     justify-content: flex-start;
+    gap: 1.25rem;
     align-items: center;
     background: var(--secondary-bg-color);
     margin-top: -5.5rem;
 }
 
 .skills h2 {
+    font-size: 2rem;
     text-transform: none;
 }
 
@@ -116,9 +118,10 @@ main {
 }
 
 .skills__logo {
-    width: 3.0rem;
-    height: 3.0rem;
+    height: 2.4rem;
 }
+
+
 b {
     font-weight: 400;
 }
@@ -139,6 +142,11 @@ p {
     font-size: 1.25rem;
     text-align: justify;
 }
+
+footer {
+    margin-bottom: 5rem;
+}
+
  footer p  {
     display: flex;
     position:fixed;
@@ -146,7 +154,7 @@ p {
     text-align: center;
     justify-content: center;
     padding: 1rem;
-    margin-bottom: 5rem;
+    
 }
 
 
@@ -248,7 +256,14 @@ i {
     width: 100%;
     background: transparent;
     border-radius: 3.125rem;
-    padding: 0.875rem 1rem;
+    padding: 0.875rem 1.5rem;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
 }
 
 .btn span, .btn i {
@@ -287,11 +302,91 @@ i {
     .header__toggle {
         min-width: 30%;
     }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      main {
+         padding: 8rem 6rem 4rem 6rem;
+      }
+
+    .main__content1{
+       display:flex;
+       padding: 8rem 6rem 4rem 6rem;
+       flex-direction: column;
+       align-items: flex-start;
+       
+    }
+
+    .skills {
+        padding: 6.25rem 6rem 2rem 6rem;
+        margin-top: -6rem;
+    }
+
+    footer {
+        margin: 0;
+    }
     
 }
 
+@media (min-width: 1200px) {
+       main {
+        padding: 12rem 6rem 2rem;
+       }
+
+    .main__content1 .btn {
+        width: auto;
+    }
+
+    .skills {
+        flex-direction: row;
+        justify-content: space-between;
+        padding:  10rem 6rem 4rem;
+    }
+
+    .skills h2 {
+        font-size:3.5rem;
+        width: 60%;
+    }
+
+    .skills__item {
+    width: 6rem;
+    height: 6rem;
+}
+.skills__list {
+    gap: 1rem;
+}
+  
+
+.skills__logo {
+    height: 3rem;
+}
+
+}
+
+
+
 @media (min-width: 1400px) {
+      h1 {
+        font-size: 6.25rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+
       .header {
         padding: 1rem 15rem;
       }
+
+      main {
+         padding: 12rem 15rem 2rem;
+      }
+
+        .skills {
+        padding:  10rem 15rem 4rem;
+    }
+
 }
