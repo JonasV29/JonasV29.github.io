@@ -24,7 +24,7 @@
      --primary-bg-color: #E9E9E9;
      --secondary-bg-color: #C7C8C9;
      --primary-border-color: #C7C8C9;
-    --secondary-border-color: #C7C8C9;
+    --secondary-border-color: #9A9A9C;
 
      --title-color: #0B0B0F;
      --text-color: #28292E;
@@ -64,11 +64,15 @@ a:hover {
     gap:1rem;
 }
 
+main, .projects {
+    padding: 2.5rem, 1rem;
+}
+
 main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2.5rem 1rem;
+    margin-top: 0;
 }
 
 .main__content1 {
@@ -85,7 +89,7 @@ main {
 .skills {
     display: flex;
     flex-direction: column;
-    padding: 6.25rem 1rem 2rem 1rem;
+    padding: 6.25rem 1rem 2rem;
     justify-content: flex-start;
     gap: 1.25rem;
     align-items: center;
@@ -101,7 +105,6 @@ main {
 .skills__list {
     display:flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     gap: .5rem;
 }
 
@@ -121,6 +124,54 @@ main {
     height: 2.4rem;
 }
 
+.projects {
+     display:flex;
+     flex-direction: column;
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__cover {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap:1rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+}
+
+.card__description {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.card__buttons {
+    display:flex;
+
+}
+
+.card__body  .skills__item {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card__body .skills__logo {
+    height: 2rem;
+}
 
 b {
     font-weight: 400;
@@ -130,6 +181,13 @@ h1 {
     font-size: 2.5rem;
     font-weight: 200;
 }
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 
 h1,h2,h3 {
     font-family: 'League Spartan',Tahoma, Geneva, Verdana, sans-serif;
@@ -256,9 +314,11 @@ i {
     width: 100%;
     background: transparent;
     border-radius: 3.125rem;
+    border: none;
     padding: 0.875rem 1.5rem;
     transition: ease-in-out .3s;
     cursor: pointer;
+    color: var(--primary-color);
 }
 
 .btn:hover {
@@ -307,7 +367,12 @@ i {
         font-size: 4rem;
       }
 
-      main {
+      h2 {
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+      }
+
+      main, .projects {
          padding: 8rem 6rem 4rem 6rem;
       }
 
@@ -330,10 +395,30 @@ i {
     
 }
 
+@media (min-width: 992px) {
+    .projects__card {
+        flex-direction: row;
+    }
+
+    .projects__card.card--reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .card__cover {
+        width: 55%;
+    }
+
+}
+
 @media (min-width: 1200px) {
        main {
         padding: 12rem 6rem 2rem;
        }
+       
+     h2 {
+        font-size: 4rem;
+     }
 
     .main__content1 .btn {
         width: auto;
@@ -363,6 +448,26 @@ i {
     height: 3rem;
 }
 
+.projects__card {
+    flex-direction: row;
+}
+
+.card__cover {
+    width: 50%;
+}
+
+.card__title {
+    font-size: 3.25rem;
+}
+
+.card__description, .card__item {
+    font-size: 1.25rem;
+}
+
+.card__buttons .btn {
+   width: auto;
+}
+
 }
 
 
@@ -371,6 +476,10 @@ i {
       h1 {
         font-size: 6.25rem;
       }
+
+      h2 {
+        font-size: 5rem;
+      } 
 
       p {
         font-size: 1.5rem;
