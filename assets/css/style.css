@@ -508,21 +508,27 @@ i {
     }
 
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
       }
 
       h2 {
         font-size: 3rem;
-        letter-spacing: 0.4rem;
       }
 
       main, .projects , .about {
          padding: 8rem 6rem 4rem 6rem;
       }
 
+      .contact {
+        padding: 6rem;
+      }
+
+      .contact p {
+        width: 80%;
+      }
+
     .main__content1{
        display:flex;
-       padding: 8rem 6rem 4rem 6rem;
        flex-direction: column;
        align-items: flex-start;
        
@@ -582,6 +588,10 @@ i {
        
      h2 {
         font-size: 4rem;
+     }
+
+     h3 {
+        font-size: 2.5rem;
      }
 
     .main__content1 .btn {
@@ -654,5 +664,6 @@ p, span, li {
     .skills, .projects, .about {
         padding: 10rem 15rem 4rem;
     }
+
 
 }
