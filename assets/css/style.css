@@ -193,7 +193,7 @@ main {
 
 .about__photo {
     width: 60%;
-    margin-left: 6rem;
+    margin-left: 5rem;
     object-fit: cover;
     object-position: center;
     pointer-events: none;
