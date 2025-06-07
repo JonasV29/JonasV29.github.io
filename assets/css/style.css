@@ -343,7 +343,7 @@ footer {
     margin-bottom: 5rem;
 }
 
- footer p  {
+ footer p .end {
     display: flex;
     position:fixed;
     font-size: .875rem;
@@ -540,8 +540,9 @@ i {
     }
 
     footer {
-        margin: 0;
+        margin-left: 25rem;
     }
+
     
 }
 
