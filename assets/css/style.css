@@ -534,10 +534,6 @@ i {
        align-items: flex-start;  
     }
 
-    .about__description {
-        margin-left: 5rem;
-    }
-
     .skills {
         padding: 6.25rem 6rem 2rem 6rem;
         margin-top: -6rem;
