@@ -192,7 +192,8 @@ main {
 }
 
 .about__photo {
-    width: 30%;
+    width: 60%;
+    margin-left: 8rem;
     object-fit: cover;
     object-position: center;
     pointer-events: none;
@@ -205,6 +206,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     gap: 1.5rem;
+    
 }
 
 .about__icons {
@@ -530,8 +532,11 @@ i {
     .main__content1{
        display:flex;
        flex-direction: column;
-       align-items: flex-start;
-       
+       align-items: flex-start;  
+    }
+
+    .about__description {
+        margin-left: 7rem;
     }
 
     .skills {
@@ -543,6 +548,9 @@ i {
         margin-left: 25rem;
     }
 
+     .about__photo {
+        width: 100%;
+    }
     
 }
 
@@ -665,6 +673,8 @@ p, span, li {
     .skills, .projects, .about {
         padding: 10rem 15rem 4rem;
     }
+
+    
 
 
 }
