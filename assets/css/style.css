@@ -193,7 +193,7 @@ main {
 
 .about__photo {
     width: 60%;
-    margin-left: 8rem;
+    margin-left: 6rem;
     object-fit: cover;
     object-position: center;
     pointer-events: none;
@@ -536,7 +536,7 @@ i {
     }
 
     .about__description {
-        margin-left: 7rem;
+        margin-left: 5rem;
     }
 
     .skills {
