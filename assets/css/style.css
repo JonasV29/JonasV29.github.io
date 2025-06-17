@@ -670,7 +670,11 @@ p, span, li {
         padding: 10rem 15rem 4rem;
     }
 
-    
+    .end {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 }
